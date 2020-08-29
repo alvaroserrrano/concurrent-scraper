@@ -106,3 +106,6 @@ function sleep(ms) {
     console.log("running max number of browsers");
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+app.listen(PORT);
+console.log(`App running on port: ${PORT}`);
