@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Alvaro Serrano",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "lowdb": "^1.0.0"
+  }
+}
