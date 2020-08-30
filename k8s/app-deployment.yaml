@@ -1,0 +1,20 @@
+kind: Deployment
+metadata:
+  name: scraper
+  labels:
+    app: scraper
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: scraper
+  template:
+    metadata:
+      labels:
+        app: scraper
+    spec:
+      containers:
+        - name: concurrent-scraper
+          image: aserranorivas/concurrent-scraper
+          ports:
+            - containerPort: 5000

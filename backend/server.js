@@ -50,7 +50,7 @@ app.post("/api/booksDetails", async (req, res) => {
     try {
         let data = req.body;
         console.log(req.body.url);
-        while (browsers == maxNumberOfBrowsers) {
+        while (browsers == maxNumBrowsers) {
             await sleep(1000);
         }
         await getBookDetailsHandler(data).then(result => {
